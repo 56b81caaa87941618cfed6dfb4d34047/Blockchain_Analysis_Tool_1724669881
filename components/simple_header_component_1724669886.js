@@ -86,6 +86,9 @@ Summary: The header component is a nav bar on top of the page -- it contains the
                             </a>
                         </li>
                     </ul>
+                    <button id="hello-world-button" class="ml-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out">
+                        Hello World
+                    </button>
                 </div>
             </div>
         </nav>
@@ -99,6 +102,14 @@ export default {
             expanded: false,
             tab: null
         };
+    },
+    methods: {
+        // Hello World button click method
+        helloWorld() {
+            console.log("Hello World!");
+            // Add your Hello World logic here
+        }
+        // End of Hello World button click method
     }
 };
 </script>
